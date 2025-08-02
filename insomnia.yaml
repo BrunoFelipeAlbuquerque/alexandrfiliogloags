@@ -1,0 +1,172 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1704808521160
+  modified: 1704808521160
+  description: ""
+collection:
+  - url: http://localhost:8080/spaceships
+    name: GetSpaceships
+    meta:
+      id: req_ec3c7fd70382447f9b5b6c28d6326e0e
+      created: 1754155683935
+      modified: 1754160481809
+      isPrivate: false
+      description: ""
+      sortKey: -1754155683935
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/10.3.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/spaceships/1
+    name: GetSpaceshipByID
+    meta:
+      id: req_a2c0d8576c734fc08df1453bd8403ef7
+      created: 1754158037729
+      modified: 1754158062045
+      isPrivate: false
+      description: ""
+      sortKey: -1754155683835
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.4.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/spaceships
+    name: PostSpaceship
+    meta:
+      id: req_28fe1879bfa8429b99599bfde665ebc9
+      created: 1754158065547
+      modified: 1754158529692
+      isPrivate: false
+      description: ""
+      sortKey: -1754155683735
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Nebulon-B",
+        	"class": "Frigate",
+        	"crew": 920,
+        	"image": "https://placehold.co/600x400?text=Nebulon-B",
+        	"value": 799.99,
+        	"status": "Operational",
+        	"armament": [
+        		{
+        			"title": "Laser Turrets",
+        			"qty": 12
+        		},
+        		{
+        			"title": "Point Defense",
+        			"qty": 6
+        		}
+        	]
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.4.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/spaceships/1
+    name: PutSpaceship
+    meta:
+      id: req_c442403d9b1e49a1a8a775b093218a11
+      created: 1754158534766
+      modified: 1754158585326
+      isPrivate: false
+      description: ""
+      sortKey: -1754155683635
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Devastator II",
+        	"class": "Super Star Destroyer",
+        	"crew": 47000,
+        	"image": "https://placehold.co/600x400?text=Devastator+II",
+        	"value": 2500.00,
+        	"status": "Operational",
+        	"armament": [
+        		{
+        			"title": "Heavy Turbo Lasers",
+        			"qty": 80
+        		},
+        		{
+        			"title": "Ion Cannons",
+        			"qty": 50
+        		}
+        	]
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.4.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/spaceships/3
+    name: DeleteSpaceship
+    meta:
+      id: req_8b5bfc0b0c06475c8479050b31eaf56b
+      created: 1754158600778
+      modified: 1754158626381
+      isPrivate: false
+      description: ""
+      sortKey: -1754155683535
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/11.4.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1754155674010
+    modified: 1754155674010
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1754155674008
+    modified: 1754155674008
+    isPrivate: false
