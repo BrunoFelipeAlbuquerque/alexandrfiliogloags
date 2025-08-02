@@ -96,13 +96,3 @@ Example:
 ```
 /spaceships?name=Imperial&page=1&limit=10
 ```
-
----
-
-## 🧪 Testing (Optional)
-
-You can use Go’s built-in testing tools:
-
-```bash
-go test ./...
-```
